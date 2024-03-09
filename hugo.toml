@@ -1,0 +1,89 @@
+baseurl      = "localhost"
+title        = "My Website"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  homeSubtitle = "Welcome"
+
+  disableReadOtherPosts = false
+
+  enableSharingButtons = true
+  
+  enableGlobalLanguageMenu = false
+  
+  enableThemeToggle = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage"
+  keywords = "homepage, blog"
+  images = [""]
+  
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/devplayer55221"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/devplayer55221"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/mukund-kr-kedia/"
+    
+  [[params.social]]
+  	name = "medium"
+  	url = "https://medium.com/@mukundkrkedia"
+  	
+  	
+  [params.footer]
+  	topText = []
+  	bottomText = [
+  		"Powered by <a href=\"https://gohugo.io/\">Hugo</a>",
+  		"Made with <a href=\"https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/\">hello-friend-ng</a>"
+  	]
+ 
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Hi"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params]
+    subtitle  = "Welcome"
+
+    [languages.en.params.logo]
+      logoText = "devplayer55221"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Logo Here"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"  
+  
+#  [[menu.main]]
+#    identifier = "blog"
+#    name       = "Blog"
+#    url        = "/posts"
