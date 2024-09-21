@@ -77,13 +77,10 @@ paginate     = 10
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "about/"
+    url        = "/about"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"  
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog"  
   
-#  [[menu.main]]
-#    identifier = "blog"
-#    name       = "Blog"
-#    url        = "/posts"
+

@@ -4,24 +4,108 @@
     <title>Hi</title>
     <link>//localhost:1313/</link>
     <description>Recent content on Hi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASP.NET Security</title>
+      <link>//localhost:1313/posts/aspdotnet-security/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/aspdotnet-security/</guid>
+      <description>&lt;p&gt;Learning few things about security implementation in ASP.NET for source code review.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf&#34;&gt;https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Connecting Raspberry-Pi to Laptop Without HDMI or Ethernet Cable</title>
+      <link>//localhost:1313/posts/raspberry-pi-to-laptop/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/raspberry-pi-to-laptop/</guid>
+      <description>&lt;p&gt;While doing a college project, I had to use the Raspberry-Pi for the first time and needed to connect it with the laptop without a cable. As I remember, it required some troubleshooting.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/&#34;&gt;https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CVE in AppSamvid thick client app</title>
+      <link>//localhost:1313/posts/appsamvid-cve/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/appsamvid-cve/</guid>
+      <description>&lt;p&gt;Found vulnerabilities while checking the AppSamvid application with my colleague &lt;a href=&#34;https://www.linkedin.com/in/avinash-kumar22/&#34;&gt;Avinash&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;VLCODE=CIVN-2024-0081&#34;&gt;https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;amp;VLCODE=CIVN-2024-0081&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Decoding Digital Personal Data Protection Act For Organizations</title>
+      <link>//localhost:1313/posts/decoding-dpda/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/decoding-dpda/</guid>
+      <description>&lt;p&gt;Gone through the new Digital Personal Data Protection Act and wrote an article that could be helpful to the organziations.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations&#34;&gt;https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HackTheBox Business CTF 2023 – Crypto</title>
+      <link>//localhost:1313/posts/htb-businessctf-2023-crypto/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/htb-businessctf-2023-crypto/</guid>
+      <description>&lt;p&gt;Our team &amp;lsquo;Payatu Bandits&amp;rsquo; played the HTB Business CTF 2023 and I solved one of the Crypto challenge.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/hackthebox-business-ctf-2023-crypto&#34;&gt;https://payatu.com/blog/hackthebox-business-ctf-2023-crypto&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How To Use NoSQL Injection To Overwrite The Redis Keys</title>
+      <link>//localhost:1313/posts/nosql-injection/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/nosql-injection/</guid>
+      <description>&lt;p&gt;NoSQL Injection demonstration on Redis.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/nosql-injection/&#34;&gt;https://payatu.com/blog/nosql-injection/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nahamcon CTF 2024 Crypto writeup — Magic RSA, Encryption Server</title>
+      <link>//localhost:1313/posts/nahamconctf-2024-crypto/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/nahamconctf-2024-crypto/</guid>
+      <description>&lt;p&gt;Solved two Crypto challenges in Nahamcon CTF 2024. Here are the writeups of those.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f&#34;&gt;https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Observations while learning Web app security</title>
+      <link>//localhost:1313/posts/web-security-observation/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/web-security-observation/</guid>
+      <description>&lt;p&gt;I was learning web security concepts and written some notes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5&#34;&gt;https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reverse Engineering — Malware Analysis — 1</title>
+      <link>//localhost:1313/posts/re-ml-1/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/re-ml-1/</guid>
+      <description>&lt;p&gt;Started a learning Reverse Engineering and Malware Analysis. Here&amp;rsquo;s the first article on it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505&#34;&gt;https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thick Client Pentest Methodology</title>
+      <link>//localhost:1313/posts/thick-client-pentest/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/thick-client-pentest/</guid>
+      <description>&lt;p&gt;A very basic read on Thick Client Pentesting.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12&#34;&gt;https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding HTTP Request Smuggling With Hop-To-Hop Headers</title>
+      <link>//localhost:1313/posts/http-request-smuggling/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/http-request-smuggling/</guid>
+      <description>&lt;p&gt;HTTP Request Smuggling could occur using Hop-To-Hop Headers that lead to Cache Poisoning.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/http-request-smuggling/&#34;&gt;https://payatu.com/blog/http-request-smuggling/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>XSS bypassing ModSecurity WAF</title>
+      <link>//localhost:1313/posts/modsecurity-xss/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/modsecurity-xss/</guid>
+      <description>&lt;p&gt;Found an XSS payload that bypassed the ModSecurity coreruleset.&lt;/p&gt;&#xA;&lt;p&gt;It is fixed now.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/coreruleset/coreruleset/issues/3381&#34;&gt;https://github.com/coreruleset/coreruleset/issues/3381&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>Hi !&#xA;I am Mukund Kedia, a cybersecurity consultant. I am interested in cybersecurity and coding. My skills include Web, API and Thick client pentesting and I am eager to further add pentesting skills in domains like Mobile, Network, etc. I want to explore other domains in cyber security as well and therefore started to learn about Reverse Engineering recently and hope to improve significantly in this field with focus on Malware Analysis.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Hi !&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;i-am-mukund-kedia-a-cybersecurity-consultant&#34;&gt;I am Mukund Kedia, a cybersecurity consultant.&lt;/h3&gt;&#xA;&lt;p&gt;I am interested in cybersecurity and coding. My skills include Web, API and Thick client pentesting and I am eager to further add pentesting skills in domains like Mobile, Network, etc. I want to explore other domains in cyber security as well and therefore started to learn about Reverse Engineering recently and hope to improve significantly in this field with focus on Malware Analysis.&#xA;I have coding experience in Python, Node.js, Java, C++ and am trying to continuously enhance my coding skills.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Posts</title>
-      <link>//localhost:1313/posts/</link>
+      <title>Blog</title>
+      <link>//localhost:1313/blog/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/</guid>
-      <description> ASP.NET security Thick client Pentest methodology Observations while learning Web app security Connecting Raspberry-Pi to Laptop Without HDMI or Ethernet Cable Decoding Digital Personal Data Protection Act For Organizations HackTheBox Business CTF 2023 – Crypto Understanding HTTP Request Smuggling With Hop-To-Hop Headers How To Use NoSQL Injection To Overwrite The Redis Keys </description>
+      <guid>//localhost:1313/blog/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/aspdotnet-security/&#34;&gt;ASP.NET security&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/thick-client-pentest/&#34;&gt;Thick client Pentest methodology&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/web-security-observation/&#34;&gt;Observations while learning Web app security&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/raspberry-pi-to-laptop/&#34;&gt;Connecting Raspberry-Pi to Laptop Without HDMI or Ethernet Cable&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/decoding-dpda/&#34;&gt;Decoding Digital Personal Data Protection Act For Organizations&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/htb-businessctf-2023-crypto/&#34;&gt;HackTheBox Business CTF 2023 – Crypto&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/http-request-smuggling/&#34;&gt;Understanding HTTP Request Smuggling With Hop-To-Hop Headers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/nosql-injection/&#34;&gt;How To Use NoSQL Injection To Overwrite The Redis Keys&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/nahamconctf-2024-crypto/&#34;&gt;Nahamcon CTF 2024 Crypto writeup — Magic RSA, Encryption Server&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/re-ml-1/&#34;&gt;Reverse Engineering — Malware Analysis — 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/modsecurity-xss/&#34;&gt;XSS bypassing Modsecruity WAF&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/appsamvid-cve/&#34;&gt;CVE in AppSamvid thick client app&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,166 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
         <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ASP.NET Security</title>
+            <link>//localhost:1313/posts/aspdotnet-security/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/aspdotnet-security/</guid>
+            <description>&lt;p&gt;Learning few things about security implementation in ASP.NET for source code review.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf&#34;&gt;https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Learning few things about security implementation in ASP.NET for source code review.</p>
+<p><a href="https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf">https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Connecting Raspberry-Pi to Laptop Without HDMI or Ethernet Cable</title>
+            <link>//localhost:1313/posts/raspberry-pi-to-laptop/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/raspberry-pi-to-laptop/</guid>
+            <description>&lt;p&gt;While doing a college project, I had to use the Raspberry-Pi for the first time and needed to connect it with the laptop without a cable. As I remember, it required some troubleshooting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/&#34;&gt;https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>While doing a college project, I had to use the Raspberry-Pi for the first time and needed to connect it with the laptop without a cable. As I remember, it required some troubleshooting.</p>
+<p><a href="https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/">https://www.instructables.com/Connecting-Raspberry-Pi-to-Laptop-Without-HDMI-or-/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>CVE in AppSamvid thick client app</title>
+            <link>//localhost:1313/posts/appsamvid-cve/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/appsamvid-cve/</guid>
+            <description>&lt;p&gt;Found vulnerabilities while checking the AppSamvid application with my colleague &lt;a href=&#34;https://www.linkedin.com/in/avinash-kumar22/&#34;&gt;Avinash&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;VLCODE=CIVN-2024-0081&#34;&gt;https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;amp;VLCODE=CIVN-2024-0081&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Found vulnerabilities while checking the AppSamvid application with my colleague <a href="https://www.linkedin.com/in/avinash-kumar22/">Avinash</a>.</p>
+<p><a href="https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2024-0081">https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;VLCODE=CIVN-2024-0081</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Decoding Digital Personal Data Protection Act For Organizations</title>
+            <link>//localhost:1313/posts/decoding-dpda/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/decoding-dpda/</guid>
+            <description>&lt;p&gt;Gone through the new Digital Personal Data Protection Act and wrote an article that could be helpful to the organziations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations&#34;&gt;https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Gone through the new Digital Personal Data Protection Act and wrote an article that could be helpful to the organziations.</p>
+<p><a href="https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations">https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>HackTheBox Business CTF 2023 – Crypto</title>
+            <link>//localhost:1313/posts/htb-businessctf-2023-crypto/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/htb-businessctf-2023-crypto/</guid>
+            <description>&lt;p&gt;Our team &amp;lsquo;Payatu Bandits&amp;rsquo; played the HTB Business CTF 2023 and I solved one of the Crypto challenge.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/hackthebox-business-ctf-2023-crypto&#34;&gt;https://payatu.com/blog/hackthebox-business-ctf-2023-crypto&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Our team &lsquo;Payatu Bandits&rsquo; played the HTB Business CTF 2023 and I solved one of the Crypto challenge.</p>
+<p><a href="https://payatu.com/blog/hackthebox-business-ctf-2023-crypto">https://payatu.com/blog/hackthebox-business-ctf-2023-crypto</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How To Use NoSQL Injection To Overwrite The Redis Keys</title>
+            <link>//localhost:1313/posts/nosql-injection/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/nosql-injection/</guid>
+            <description>&lt;p&gt;NoSQL Injection demonstration on Redis.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/nosql-injection/&#34;&gt;https://payatu.com/blog/nosql-injection/&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>NoSQL Injection demonstration on Redis.</p>
+<p><a href="https://payatu.com/blog/nosql-injection/">https://payatu.com/blog/nosql-injection/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Nahamcon CTF 2024 Crypto writeup — Magic RSA, Encryption Server</title>
+            <link>//localhost:1313/posts/nahamconctf-2024-crypto/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/nahamconctf-2024-crypto/</guid>
+            <description>&lt;p&gt;Solved two Crypto challenges in Nahamcon CTF 2024. Here are the writeups of those.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f&#34;&gt;https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Solved two Crypto challenges in Nahamcon CTF 2024. Here are the writeups of those.</p>
+<p><a href="https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f">https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Observations while learning Web app security</title>
+            <link>//localhost:1313/posts/web-security-observation/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/web-security-observation/</guid>
+            <description>&lt;p&gt;I was learning web security concepts and written some notes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5&#34;&gt;https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>I was learning web security concepts and written some notes.</p>
+<p><a href="https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5">https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reverse Engineering — Malware Analysis — 1</title>
+            <link>//localhost:1313/posts/re-ml-1/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/re-ml-1/</guid>
+            <description>&lt;p&gt;Started a learning Reverse Engineering and Malware Analysis. Here&amp;rsquo;s the first article on it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505&#34;&gt;https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Started a learning Reverse Engineering and Malware Analysis. Here&rsquo;s the first article on it.</p>
+<p><a href="https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505">https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Thick Client Pentest Methodology</title>
+            <link>//localhost:1313/posts/thick-client-pentest/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/thick-client-pentest/</guid>
+            <description>&lt;p&gt;A very basic read on Thick Client Pentesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12&#34;&gt;https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>A very basic read on Thick Client Pentesting.</p>
+<p><a href="https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12">https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Understanding HTTP Request Smuggling With Hop-To-Hop Headers</title>
+            <link>//localhost:1313/posts/http-request-smuggling/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/http-request-smuggling/</guid>
+            <description>&lt;p&gt;HTTP Request Smuggling could occur using Hop-To-Hop Headers that lead to Cache Poisoning.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://payatu.com/blog/http-request-smuggling/&#34;&gt;https://payatu.com/blog/http-request-smuggling/&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>HTTP Request Smuggling could occur using Hop-To-Hop Headers that lead to Cache Poisoning.</p>
+<p><a href="https://payatu.com/blog/http-request-smuggling/">https://payatu.com/blog/http-request-smuggling/</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>XSS bypassing ModSecurity WAF</title>
+            <link>//localhost:1313/posts/modsecurity-xss/</link>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/modsecurity-xss/</guid>
+            <description>&lt;p&gt;Found an XSS payload that bypassed the ModSecurity coreruleset.&lt;/p&gt;
+&lt;p&gt;It is fixed now.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/coreruleset/coreruleset/issues/3381&#34;&gt;https://github.com/coreruleset/coreruleset/issues/3381&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Found an XSS payload that bypassed the ModSecurity coreruleset.</p>
+<p>It is fixed now.</p>
+<p><a href="https://github.com/coreruleset/coreruleset/issues/3381">https://github.com/coreruleset/coreruleset/issues/3381</a></p>
+]]></content>
+        </item>
         
     </channel>
 </rss>

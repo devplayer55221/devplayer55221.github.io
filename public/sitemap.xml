@@ -2,16 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/posts/aspdotnet-security/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/raspberry-pi-to-laptop/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/appsamvid-cve/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/decoding-dpda/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/htb-businessctf-2023-crypto/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/nosql-injection/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/nahamconctf-2024-crypto/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/web-security-observation/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/re-ml-1/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/thick-client-pentest/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/http-request-smuggling/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/modsecurity-xss/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/blog/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/series/</loc>
   </url><url>
