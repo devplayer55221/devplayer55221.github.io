@@ -1,4 +1,4 @@
-While installing it in Windows, follow these links:
+While installing it in Windows, follow these:
 - [Hugo installation](https://gohugo.io/installation/windows/)
   - Install Git, Go
 
