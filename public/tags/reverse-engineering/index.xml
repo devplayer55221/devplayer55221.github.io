@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse Engineering on devplayer55221</title>
+    <link>http://localhost:1313/tags/reverse-engineering/</link>
+    <description>Recent content in Reverse Engineering on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reverse-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse Engineering — Malware Analysis — 1</title>
+      <link>http://localhost:1313/post/re-ml-1/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/re-ml-1/</guid>
+      <description>Started a learning Reverse Engineering and Malware Analysis. Here&amp;rsquo;s the first article on it.&#xA;https://medium.com/@devplayer55221/reverse-engineering-malware-analysis-1-6e0e795e8505</description>
+    </item>
+    <item>
+      <title>Learning to Reverse Engineer with GDB</title>
+      <link>http://localhost:1313/post/learning-re/</link>
+      <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/learning-re/</guid>
+      <description>Wrote a post on learning to use GDB for revese engineering a very simple C program. It can also give an understanding of few Assembly Language basics.&#xA;https://payatu.com/blog/learning-to-reverse-engineer-with-gdb/</description>
+    </item>
+  </channel>
+</rss>

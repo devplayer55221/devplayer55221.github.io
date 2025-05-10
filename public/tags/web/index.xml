@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on devplayer55221</title>
+    <link>http://localhost:1313/tags/web/</link>
+    <description>Recent content in Web on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing a Burp Extension to Bypass Checksum</title>
+      <link>http://localhost:1313/post/burp-ext-checksum/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/burp-ext-checksum/</guid>
+      <description>Wrote a burp extension that can calculate the hash value of the request and add it to the checksum header. Sometimes checksum is used to not let the proxy tools like Burp Suite to modify the request, as the checksum is calculated and checked in the backend.&#xA;https://payatu.com/blog/stream-ciphers-cryptography-for-ctfs/</description>
+    </item>
+    <item>
+      <title>ASP.NET Security</title>
+      <link>http://localhost:1313/post/aspdotnet-security/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/aspdotnet-security/</guid>
+      <description>Learning few things about security implementation in ASP.NET for source code review.&#xA;https://medium.com/@devplayer55221/asp-net-security-c51db01f5faf</description>
+    </item>
+    <item>
+      <title>XSS bypassing ModSecurity WAF</title>
+      <link>http://localhost:1313/post/modsecurity-xss/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/modsecurity-xss/</guid>
+      <description>Found an XSS payload that bypassed the ModSecurity coreruleset.&#xA;It is fixed now.&#xA;https://github.com/coreruleset/coreruleset/issues/3381</description>
+    </item>
+    <item>
+      <title>How To Use NoSQL Injection To Overwrite The Redis Keys</title>
+      <link>http://localhost:1313/post/nosql-injection-redis/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/nosql-injection-redis/</guid>
+      <description>NoSQL Injection demonstration on Redis.&#xA;https://payatu.com/blog/nosql-injection/</description>
+    </item>
+    <item>
+      <title>Understanding HTTP Request Smuggling With Hop-To-Hop Headers</title>
+      <link>http://localhost:1313/post/http-request-smuggling/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/http-request-smuggling/</guid>
+      <description>HTTP Request Smuggling could occur using Hop-To-Hop Headers that lead to Cache Poisoning.&#xA;https://payatu.com/blog/http-request-smuggling/</description>
+    </item>
+    <item>
+      <title>Observations while learning Web app security</title>
+      <link>http://localhost:1313/post/web-security-observation/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/web-security-observation/</guid>
+      <description>I was learning web security concepts and written some notes.&#xA;https://medium.com/@devplayer55221/observations-while-learning-web-app-security-5e384e89d2f5</description>
+    </item>
+  </channel>
+</rss>

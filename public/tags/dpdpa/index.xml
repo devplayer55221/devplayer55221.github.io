@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DPDPA on devplayer55221</title>
+    <link>http://localhost:1313/tags/dpdpa/</link>
+    <description>Recent content in DPDPA on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dpdpa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decoding Digital Personal Data Protection Act For Organizations</title>
+      <link>http://localhost:1313/post/decoding-dpda/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/decoding-dpda/</guid>
+      <description>Gone through the new Digital Personal Data Protection Act and wrote an article that could be helpful to the organziations.&#xA;https://payatu.com/blog/decoding-digital-personal-data-protection-act-for-organizations</description>
+    </item>
+  </channel>
+</rss>

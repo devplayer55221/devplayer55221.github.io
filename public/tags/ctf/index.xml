@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ctf on devplayer55221</title>
+    <link>http://localhost:1313/tags/ctf/</link>
+    <description>Recent content in Ctf on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stream Ciphers: Cryptography for CTFs</title>
+      <link>http://localhost:1313/post/stream-cipher/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/stream-cipher/</guid>
+      <description>Learning about cryptography with Stream Ciphers. Wrote a small post on few related concepts and vulnerabilites.&#xA;https://payatu.com/blog/stream-ciphers-cryptography-for-ctfs/</description>
+    </item>
+    <item>
+      <title>Nahamcon CTF 2024 Crypto writeup — Magic RSA, Encryption Server</title>
+      <link>http://localhost:1313/post/nahamconctf-2024-crypto/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/nahamconctf-2024-crypto/</guid>
+      <description>Solved two Crypto challenges in Nahamcon CTF 2024. Here are the writeups of those.&#xA;https://medium.com/@devplayer55221/nahamcon-ctf-2024-crypto-writeup-magic-rsa-encryption-server-6edd1cd9704f</description>
+    </item>
+    <item>
+      <title>HackTheBox Business CTF 2023 – Crypto</title>
+      <link>http://localhost:1313/post/htb-businessctf-2023-crypto/</link>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/htb-businessctf-2023-crypto/</guid>
+      <description>Our team &amp;lsquo;Payatu Bandits&amp;rsquo; played the HTB Business CTF 2023 and I solved one of the Crypto challenge.&#xA;https://payatu.com/blog/hackthebox-business-ctf-2023-crypto</description>
+    </item>
+  </channel>
+</rss>

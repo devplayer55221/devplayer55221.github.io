@@ -1,16 +1,17 @@
 +++
 title = "About"
-date = "2014-04-09"
-aliases = ["about-us","contact"]
-[ author ]
-  name = "Mukund Kedia"
+description = "Hugo, the world's fastest framework for building websites"
+date = "2019-02-28"
+aliases = ["about-us", "about-hugo", "contact"]
+author = "mukund"
 +++
 
-**Hi !**
+### Hello! 
 
-### I am Mukund Kedia, a cybersecurity enthusiast.
+I am Mukund Kedia.
 
-I am interested in cybersecurity and coding. My skills include Web, API and Thick client pentesting and I am eager to further add pentesting skills in domains like Mobile, Network, etc. I want to explore other domains in cyber security as well and therefore started to learn about Reverse Engineering recently and hope to improve significantly in this field with focus on Malware Analysis.
-I have coding experience in Python, Node.js, Java, C++ and am trying to continuously enhance my coding skills.
+I have major experience is in Web and API pentesting, along with basic knowledge of Thick Client and Network pentesting too. My work has also included source code reviews, server configuration reviews, and compliance assessments such as data localization audit.
 
+I’m continuously improving my skills in source code review and have a strong interest in reverse engineering and low-level programming.
 
+I have experience with Python, Node.js, and Bash, and I’m looking to further strengthen my overall coding proficiency.

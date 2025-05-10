@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waf on devplayer55221</title>
+    <link>http://localhost:1313/tags/waf/</link>
+    <description>Recent content in Waf on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/waf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XSS bypassing ModSecurity WAF</title>
+      <link>http://localhost:1313/post/modsecurity-xss/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/modsecurity-xss/</guid>
+      <description>Found an XSS payload that bypassed the ModSecurity coreruleset.&#xA;It is fixed now.&#xA;https://github.com/coreruleset/coreruleset/issues/3381</description>
+    </item>
+  </channel>
+</rss>

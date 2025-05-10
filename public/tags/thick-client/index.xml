@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thick Client on devplayer55221</title>
+    <link>http://localhost:1313/tags/thick-client/</link>
+    <description>Recent content in Thick Client on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/thick-client/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE In AppSamvid Thick Client App</title>
+      <link>http://localhost:1313/post/appsamvid-cve/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/appsamvid-cve/</guid>
+      <description>Found vulnerabilities while checking the AppSamvid application with my colleague Avinash.&#xA;https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&amp;amp;VLCODE=CIVN-2024-0081</description>
+    </item>
+    <item>
+      <title>Thick Client Pentest Methodology</title>
+      <link>http://localhost:1313/post/thick-client-pentest/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/thick-client-pentest/</guid>
+      <description>A very basic read on Thick Client Pentesting.&#xA;https://medium.com/@devplayer55221/thick-client-pentest-methodology-f11350222f12</description>
+    </item>
+  </channel>
+</rss>

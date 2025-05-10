@@ -2,56 +2,105 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/aspdotnet-security/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/raspberry-pi-to-laptop/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/burp/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/appsamvid-cve/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/general/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/decoding-dpda/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/index/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/htb-businessctf-2023-crypto/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/nosql-injection/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/web/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/nahamconctf-2024-crypto/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/burp-ext-checksum/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/web-security-observation/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/cryptography/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ctf/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/re-ml-1/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/stream-cipher/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/thick-client-pentest/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/nahamconctf-2024-crypto/</loc>
+    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/http-request-smuggling/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/reverse-engineering/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/modsecurity-xss/</loc>
-    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/re-ml-1/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/learning-re/</loc>
+    <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/cve/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>http://localhost:1313/post/appsamvid-cve/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/tags/thick-client/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/.net/</loc>
+    <lastmod>2024-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/aspdotnet-security/</loc>
+    <lastmod>2024-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/waf/</loc>
+    <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/modsecurity-xss/</loc>
+    <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/act/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/decoding-dpda/</loc>
+    <lastmod>2023-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/htb-businessctf-2023-crypto/</loc>
+    <lastmod>2023-07-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/nosql-injection-redis/</loc>
+    <lastmod>2023-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/http-request-smuggling/</loc>
+    <lastmod>2023-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/thick-client-pentest/</loc>
+    <lastmod>2022-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/web-security-observation/</loc>
+    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/raspberry-pi-to-laptop/</loc>
+    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/project/</loc>
+    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

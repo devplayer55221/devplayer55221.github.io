@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Burp on devplayer55221</title>
+    <link>http://localhost:1313/tags/burp/</link>
+    <description>Recent content in Burp on devplayer55221</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/burp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing a Burp Extension to Bypass Checksum</title>
+      <link>http://localhost:1313/post/burp-ext-checksum/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/burp-ext-checksum/</guid>
+      <description>Wrote a burp extension that can calculate the hash value of the request and add it to the checksum header. Sometimes checksum is used to not let the proxy tools like Burp Suite to modify the request, as the checksum is calculated and checked in the backend.&#xA;https://payatu.com/blog/stream-ciphers-cryptography-for-ctfs/</description>
+    </item>
+  </channel>
+</rss>
