@@ -15,3 +15,5 @@ I have major experience is in Web and API pentesting, along with basic knowledge
 I’m continuously improving my skills in source code review and have a strong interest in reverse engineering and low-level programming.
 
 I have experience with Python, Node.js, and Bash, and I’m looking to further strengthen my overall coding proficiency.
+
+I have got some Holopin [badges](https://www.holopin.io/@devplayer55221#badges).
