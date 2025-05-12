@@ -26,50 +26,22 @@
   <meta name="theme-color" />
 
   <meta name="description" content="I was just learning about the C&#43;&#43; fundamentals from The Cherno C&#43;&#43; playlist and thought of making notes on it. Added reference at the bottom.
-What’s cmake?
-CMake is an open-source, cross-platform build system generator. It doesn’t build software directly—it generates build files (like Makefiles, Ninja build files, or Visual Studio project files) based on the instructions you give it in CMakeLists.txt.
+What’s cmake? CMake is an open-source, cross-platform build system generator. It doesn’t build software directly—it generates build files (like Makefiles, Ninja build files, or Visual Studio project files) based on the instructions present in CMakeLists.txt.
 cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &#34;${CMAKE_CXX_FLAGS} -Wall -Werror -std=c&#43;&#43;14&#34;) set (source_dir &#34;${PROJECT_SOURCE_DIR}/src/&#34;) file(GLOB source_files &#34;${source_dir}/*." />
   <meta name="author" content="mukund" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
-  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
   
 
   <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" /><link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
 
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
-  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
-  crossorigin="anonymous"
-/>
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
-  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
-  crossorigin="anonymous"
-></script>
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
-  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-  crossorigin="anonymous"
-></script><script>
-  document.addEventListener('DOMContentLoaded', () =>
-    renderMathInElement(document.body, {
-      
-      
-      delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '$', right: '$', display: false },
-      ],
-      
-      throwOnError: false,
-    }),
-  );
-</script>
-
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
 
   
   <link
@@ -95,7 +67,7 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
       >devplayer55221</a
     >
     <div
-      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
       role="button"
       aria-label="Dark"
     ></div>
@@ -193,8 +165,8 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
       <span>mukund</span></div></header>
 
   <section><p>I was just learning about the C++ fundamentals from <strong>The Cherno</strong> C++ playlist and thought of making notes on it. Added reference at the bottom.</p>
-<p><strong>What’s cmake?</strong></p>
-<p>CMake is an open-source, cross-platform build system generator. It doesn’t build software directly—it generates build files (like Makefiles, Ninja build files, or Visual Studio project files) based on the instructions you give it in <code>CMakeLists.txt</code>.</p>
+<h3 id="whats-cmake">What’s cmake?</h3>
+<p>CMake is an open-source, cross-platform build system generator. It doesn’t build software directly—it generates build files (like Makefiles, Ninja build files, or Visual Studio project files) based on the instructions present in <mark>CMakeLists.txt</mark>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>cmake_minimum_required (VERSION <span style="color:#ae81ff">3.5</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>project (HelloWorld)
@@ -214,20 +186,24 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
 <li>Files with <code>.cpp</code> extension will be stored into the source directory.</li>
 <li>An executable with the name ‘HelloWorld’ is to be created on build using the .cpp files in source directory.</li>
 </ul>
-<p>A <a href="http://build.sh"><code>build.sh</code></a> file is created that contains the cmake command to configure the build environment. It would generate Makefiles to use with the IDE (here CodeLite).</p>
+<p>A <mark>build.sh</mark> file is created that contains the cmake command to configure the build environment. It would generate Makefiles to use with the IDE (here CodeLite).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>cmake <span style="color:#f92672">-</span>G <span style="color:#e6db74">&#34;CodeLite - Unix Makefiles&#34;</span> <span style="color:#f92672">-</span>DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug
-</span></span></code></pre></div><p><strong>In a C program</strong></p>
-<p>There is a preprocessor statement <code>#include &lt;iostream&gt;</code>. Any line starting with a <code>#</code> would be a preprocessor statement. The <code>include</code> preprocessor will copy all the contents of the mentioned file (here iostream) directly into our program file. The preprocessor statement is executed before the compilation starts. Only <code>.cpp</code> files are compiled. The <code>.cpp</code> files are compiled into <code>.obj</code> files.</p>
-<p><strong>Linker</strong> is used to join all the <code>.obj</code> files into one executable file (<code>.exe</code> in Windows)</p>
-<p>We can just declare a function in our program, and call it in another function. The function declaration could be empty, it doesn’t need to be declared to compile successfully. The <strong>compiler</strong> doesn’t check if the function has been defined. Only during the runtime(build) would we get the error indicating that the function has no definition.</p>
+</span></span></code></pre></div><h3 id="in-a-c-program">In a C program</h3>
+<p>There is a <mark>preprocessor</mark> statement <code>#include &lt;iostream&gt;</code>. Any line starting with a <code>#</code> would be a preprocessor statement. The <mark>include</mark> preprocessor will copy all the contents of the mentioned file (here iostream) directly into our program file. The preprocessor statement is executed before the compilation starts. Only <code>.cpp</code> files are compiled. The <code>.cpp</code> files are compiled into <code>.obj</code> files.</p>
+<p><mark><strong>Linker</strong></mark> is used to join all the <code>.obj</code> files into one executable file (<code>.exe</code> in Windows)</p>
+<p>We can just declare a function in our program, and call it in another function. The function declaration could be empty, it doesn’t need to be declared to compile successfully. The <mark><strong>compiler</strong></mark> doesn’t check if the function has been defined. Only during the runtime(build) would we get the error indicating that the function has no definition.</p>
 <p>The <code>.obj</code> file is binary and not readable. It contains the machine code that CPU runs. We can create a <code>.asm</code> file from the <code>.cpp</code> file which contains assembly instructions.</p>
-<p>After compilation, a process called Linking takes place. Linking finds all the symbols, functions, etc. in our project and link them together. Compilation happens on individual files separately.</p>
-<p>Let’s say that we call a function A, which in turn calls a function B and function B is declared but not defined, we will get a linking error and not a compile error. If we do not call the function A, but it still exists and call the function B, we will still get the linking error. If we add static to the declaration of function A, and do not call it, we will not get the linking error.</p>
-<p>If we add <strong>static</strong> in any function declaration, then it means that the function is only declared for that particular file, and the linker will understand that.</p>
-<p>So, the linker understands that the function A will only be used in the file where it is defined. It will see that function A is not being called, so it doesn’t matter whether the function B(which is being called inside function A) is defined or not. If the function is not declared as static, then there is a possibility that function A might get called in some other file, and for that the function B also needs to be defined.</p>
-<p>If we define a function inside a header file, and then include the same header file in two different <code>.cpp</code> files, we will get a linking error. It is because, including the header file means copying the contents of the header file to those two files, and meaning declaration of the function in two files.</p>
-<p>We can use <code>static</code> keyword while declaring the function in the header file. It will mean that the linking to the static function will be internal to the file calling it and separate files will have there own separate versions of the function.</p>
-<p><strong>References:</strong></p>
+<p>After compilation, a process called <mark>linking</mark> takes place. Linking finds all the symbols, functions, etc. in our project and link them together. Compilation happens on individual files separately.</p>
+<p>Let’s say that we call a function A, which in turn calls a function B and function B is declared but not defined, we will get a linking error and not a compile error. If we do not call the function A, but it still exists and call the function B, we will still get the linking error. If we add <mark>static</mark> to the declaration of function A, and do not call it, we will not get the linking error.</p>
+<blockquote>
+<p>If we add <code>static</code> in any function declaration, then it means that the function is only declared for that particular file.</p>
+</blockquote>
+<p>So, the linker understands that the function A will only be used in the file where it is defined. It will see that function A is not being called, so it doesn’t matter whether the function B (which is being called inside function A) is defined or not. If the function is not declared as static, then there is a possibility that function A might get called in some other file, and for that the function B also needs to be defined.</p>
+<p>If we define a function inside a header file, and then include the same header file in two different <code>.cpp</code> files, we will get a linking error. It is because, including the header file means copying the contents of the header file, and here it means declaring the function in two files.</p>
+<blockquote>
+<p>We can use <code>static</code> keyword while declaring the function in the header file. It will mean that the linking to the static function will be internal to the file calling it and separate files will have there own separate versions of that function declared as static.</p>
+</blockquote>
+<h3 id="references">References</h3>
 <ul>
 <li><a href="https://www.youtube.com/@TheCherno">TheCherno - Youtube</a>
 <ul>
@@ -244,7 +220,13 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
       href="http://localhost:1313/tags/c&#43;&#43;"
       >c&#43;&#43;</a
-    ></footer></article></main><footer
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/post/burp-ext-checksum/"
+      ><span>Writing a Burp Extension to Bypass Checksum</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025

@@ -4,6 +4,7 @@ languageCode = 'en-us'
 title = 'devplayer55221'
 theme = 'hugo-paper'
 
+
 [params]
   # color style
   color = 'linen'                           # linen, wheat, gray, light
@@ -19,14 +20,18 @@ theme = 'hugo-paper'
   # rss = true                                # show rss icon
 
   # misc
-  disableHLJS = true                        # disable highlight.js
-  disablePostNavigation = true              # disable post navigation
-  monoDarkIcon = true                       # show monochrome dark mode icon
-  math = true                               # enable KaTeX math typesetting globally
-  localKatex = false                        # use local KaTeX js/css instead of CDN
-  favicon = "favicon.ico"                   # customize the default favicon
-  appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
+  # disableHLJS = false                        # disable highlight.js
+  # disablePostNavigation = true              # disable post navigation
+  # monoDarkIcon = false                       # show monochrome dark mode icon
+  # math = true                               # enable KaTeX math typesetting globally
+  # localKatex = false                        # use local KaTeX js/css instead of CDN
+  # favicon = "favicon.ico"                   # customize the default favicon
+  # appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
 
