@@ -1,8 +1,8 @@
 +++
 author = "mukund"
-title = "C++ Working"
+title = "Learning C++"
 date = "2025-05-11"
-description = "C++ Working"
+description = "Learning C++"
 tags = [
     "c++",
 ]
@@ -42,7 +42,7 @@ A <mark>build.sh</mark> file is created that contains the cmake command to confi
 cmake -G "CodeLite - Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug
 ```
 
-### In a C program
+### Compiler and Linker
 
 There is a <mark>preprocessor</mark> statement `#include <iostream>`. Any line starting with a `#` would be a preprocessor statement. The <mark>include</mark> preprocessor will copy all the contents of the mentioned file (here iostream) directly into our program file. The preprocessor statement is executed before the compilation starts. Only `.cpp` files are compiled. The `.cpp` files are compiled into `.obj` files.
 
@@ -63,6 +63,21 @@ So, the linker understands that the function A will only be used in the file whe
 If we define a function inside a header file, and then include the same header file in two different `.cpp` files, we will get a linking error. It is because, including the header file means copying the contents of the header file, and here it means declaring the function in two files.
 
 > We can use `static` keyword while declaring the function in the header file. It will mean that the linking to the static function will be internal to the file calling it and separate files will have there own separate versions of that function declared as static.
+
+### Some other preprocessor directives...
+
+```
+#pragma once
+```
+- Prevents the header file from loading multiple times in a single `.cpp` file.
+
+```
+#ifndef _LOG_H
+```
+- Means <mark>execute below statements if `_LOG_H` is not defined</mark>.
+- We can define `_LOG_H` using the <mark>define</mark> preprocessor.
+
+---
 
 ### References
 

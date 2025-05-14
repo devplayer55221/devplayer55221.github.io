@@ -20,7 +20,7 @@
   />
 
   
-  <title>Learning C&#43;&#43; - 1 - devplayer55221</title>
+  <title>Learning C&#43;&#43; - devplayer55221</title>
 
   
   <meta name="theme-color" />
@@ -161,7 +161,7 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Learning C&#43;&#43; - 1</h1><div class="text-xs antialiased opacity-60"><time>May 11, 2025</time><span class="mx-1">&middot;</span>
+    <h1 class="my-0! pb-2.5">Learning C&#43;&#43;</h1><div class="text-xs antialiased opacity-60"><time>May 11, 2025</time><span class="mx-1">&middot;</span>
       <span>mukund</span></div></header>
 
   <section><p>I was just learning about the C++ fundamentals from <strong>The Cherno</strong> C++ playlist and thought of making notes on it. Added reference at the bottom.</p>
@@ -188,7 +188,7 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
 </ul>
 <p>A <mark>build.sh</mark> file is created that contains the cmake command to configure the build environment. It would generate Makefiles to use with the IDE (here CodeLite).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>cmake <span style="color:#f92672">-</span>G <span style="color:#e6db74">&#34;CodeLite - Unix Makefiles&#34;</span> <span style="color:#f92672">-</span>DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug
-</span></span></code></pre></div><h3 id="in-a-c-program">In a C program</h3>
+</span></span></code></pre></div><h3 id="compiler-and-linker">Compiler and Linker</h3>
 <p>There is a <mark>preprocessor</mark> statement <code>#include &lt;iostream&gt;</code>. Any line starting with a <code>#</code> would be a preprocessor statement. The <mark>include</mark> preprocessor will copy all the contents of the mentioned file (here iostream) directly into our program file. The preprocessor statement is executed before the compilation starts. Only <code>.cpp</code> files are compiled. The <code>.cpp</code> files are compiled into <code>.obj</code> files.</p>
 <p><mark><strong>Linker</strong></mark> is used to join all the <code>.obj</code> files into one executable file (<code>.exe</code> in Windows)</p>
 <p>We can just declare a function in our program, and call it in another function. The function declaration could be empty, it doesn’t need to be declared to compile successfully. The <mark><strong>compiler</strong></mark> doesn’t check if the function has been defined. Only during the runtime(build) would we get the error indicating that the function has no definition.</p>
@@ -203,6 +203,17 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
 <blockquote>
 <p>We can use <code>static</code> keyword while declaring the function in the header file. It will mean that the linking to the static function will be internal to the file calling it and separate files will have there own separate versions of that function declared as static.</p>
 </blockquote>
+<h3 id="some-other-preprocessor-directives">Some other preprocessor directives&hellip;</h3>
+<pre tabindex="0"><code>#pragma once
+</code></pre><ul>
+<li>Prevents the header file from loading multiple times in a single <code>.cpp</code> file.</li>
+</ul>
+<pre tabindex="0"><code>#ifndef _LOG_H
+</code></pre><ul>
+<li>Means <mark>execute below statements if <code>_LOG_H</code> is not defined</mark>.</li>
+<li>We can define <code>_LOG_H</code> using the <mark>define</mark> preprocessor.</li>
+</ul>
+<hr>
 <h3 id="references">References</h3>
 <ul>
 <li><a href="https://www.youtube.com/@TheCherno">TheCherno - Youtube</a>
@@ -222,9 +233,7 @@ cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &
       >c&#43;&#43;</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/learning-c&#43;&#43;-2/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Learning C&#43;&#43; - 2</span></a
-    ><a
+  ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
       href="http://localhost:1313/post/burp-ext-checksum/"
       ><span>Writing a Burp Extension to Bypass Checksum</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a

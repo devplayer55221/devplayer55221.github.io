@@ -13,10 +13,10 @@
       <link>http://localhost:1313/post/cplusplus-coding/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/cplusplus-coding/</guid>
-      <description></description>
+      <description>#pragma once This code prevents the header file from loading multiple times in a single .cpp file.&#xA;#ifndef _LOG_H This code means &amp;rsquo;execute below statements if _LOG_H is not defined&#39;.</description>
     </item>
     <item>
-      <title>C&#43;&#43; Working</title>
+      <title>C&#43;&#43; Working 1</title>
       <link>http://localhost:1313/post/cplusplus-working/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/cplusplus-working/</guid>

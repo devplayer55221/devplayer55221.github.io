@@ -6,20 +6,13 @@
     <description>Recent content on devplayer55221</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coding in C&#43;&#43;</title>
-      <link>http://localhost:1313/post/cplusplus-coding/</link>
-      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/cplusplus-coding/</guid>
-      <description>#pragma once This code prevents the header file from loading multiple times in a single .cpp file.&#xA;#ifndef _LOG_H This code means &amp;rsquo;execute below statements if _LOG_H is not defined&#39;.</description>
-    </item>
-    <item>
-      <title>C&#43;&#43; Working</title>
-      <link>http://localhost:1313/post/cplusplus-working/</link>
+      <title>Learning C&#43;&#43;</title>
+      <link>http://localhost:1313/post/learning-c&#43;&#43;/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/cplusplus-working/</guid>
+      <guid>http://localhost:1313/post/learning-c&#43;&#43;/</guid>
       <description>I was just learning about the C++ fundamentals from The Cherno C++ playlist and thought of making notes on it. Added reference at the bottom.&#xA;What’s cmake? CMake is an open-source, cross-platform build system generator. It doesn’t build software directly—it generates build files (like Makefiles, Ninja build files, or Visual Studio project files) based on the instructions present in CMakeLists.txt.&#xA;cmake_minimum_required (VERSION 3.5) project (HelloWorld) set (CMAKE_CXX_FLAGS &amp;#34;${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++14&amp;#34;) set (source_dir &amp;#34;${PROJECT_SOURCE_DIR}/src/&amp;#34;) file(GLOB source_files &amp;#34;${source_dir}/*.</description>
     </item>
     <item>
