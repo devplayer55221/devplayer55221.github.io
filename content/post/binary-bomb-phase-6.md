@@ -178,13 +178,22 @@ If the value turns out to be less than 1, the explode_bomb is function being cal
 
 ![first loop condition 1](/images/func%201%20condition%201.png)
 
-- If the value is more than 1, then again the `inp[a]` is being compared with 6. If the value is greater than 6, the jump statement is not executed and explode_bomb function will be called.
+- If the value of `inp[a]` is more than 1, then again the `inp[a]` is being compared with 6. If the value is greater than 6, the jump statement is not executed and explode_bomb function will be called.
 **So, the value of `inp[a]` should be in range of 1 and 6.**
 
 ![first loop condition 2](/images/func%201%20condition%202.png)
 
-- If the value of `a` is in [1,6], then a new variable `rbp+0e4h` (let's call it variable `b`) is assigned the value `a+1`.
-- The jump statement takes to condition statement, where the value of `b` is compared with 6. If the value is greater than or equal to 6, the jump statment again takes control to the increment operation of variable `a`.
+- If the value of `inp[a]` is less than or equal to 6, then a new variable `rbp+0e4h` (let's call it variable `b`) is assigned the value `a+1`.
+
+![b assignment](/images/b%20assignment.png)
+
+- The jump statement takes the control to a condition statement, where the value of `b` is compared with 6.
+
+![b condition](/images/b%20condition.png)
+
+- If the value is greater than or equal to 6, the jump statment again takes control to the increment operation of variable `a`.
+
+![nested loop end](/images/func%201%20nested%20loop%20end.png)
 
 - If the value of `b` is less than 6, then there is a comparison between `inp[a]` and `inp[b]`. 
 
@@ -192,7 +201,7 @@ If the value turns out to be less than 1, the explode_bomb is function being cal
 
 - If the values are equal, the jump statement is not taken, and explode_bomb function is called. If the values are not equal, the jump statement takes the control to increment of variable `b` and back to the loop condition of comparison of value `b` with 6.
 
-![array values not equal jump](/images/func%201%20array%20values%20not%20equal%20jump.png)
+![array values not equal jump](/images/func1%20array%20values%20not%20equal.png)
 ![b value increment](/images/func%201%20array%20values%20not%20equal%20jump.png)
 
 - Now, if we go back and look around the read_six_numbers function, there is an instruction related to node. Address of this node is saved to `rbp+8`.
