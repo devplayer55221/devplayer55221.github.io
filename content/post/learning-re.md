@@ -4,7 +4,7 @@ title = "Learning to Reverse Engineer with GDB"
 date = "2024-03-14"
 description = "Learning to Reverse Engineer with GDB"
 tags = [
-    "reverse engineering",
+    "assembly", "reverse engineering"
 ]
 +++
 
