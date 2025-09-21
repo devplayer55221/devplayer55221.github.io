@@ -1,8 +1,8 @@
 +++
 author = "mukund"
-title = "Binary Bomb Phase 6"
+title = "Binary Bomb Phase 6 Walkthrough"
 date = "2025-05-11"
-description = "Binary Bomb Phase 6"
+description = "Binary Bomb Phase 6 Walkthrough"
 tags = [
     "assembly", "reverse engineering"
 ]
