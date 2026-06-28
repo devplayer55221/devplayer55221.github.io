@@ -1,0 +1,84 @@
+<header class="site-header">
+  <a class="site-brand" href="{{- `` | absURL -}}" aria-label="{{ site.Title }} home">
+    <span>{{ site.Title }}</span>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+  </button>
+
+  {{- $bg_color := $.Scratch.Get "bg_color" -}}<!---->
+
+  <div class="site-nav-panel">
+    {{- with site.Menus.main -}}
+    <nav class="site-nav" aria-label="Main navigation">
+      {{- range . -}}
+      <a href="{{- .URL -}}">{{- .Name -}}</a>
+      {{- end -}}
+    </nav>
+    {{- end -}}<!---->
+
+    {{- with $.Scratch.Get "social_list" -}}
+    <nav class="social-nav" aria-label="Social links">
+      {{- range . -}}<!---->
+      <a
+        class="social-link"
+        style="--url: url({{- printf `%s.svg` . | absURL -}})"
+        href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
+        target="_blank"
+        rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
+      >
+        {{- . -}}
+      </a>
+      {{- end -}}<!---->
+    </nav>
+    {{- end -}}<!---->
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+      <span class="theme-toggle-track"><span class="theme-toggle-dot"></span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const htmlClass = document.documentElement.classList;
+  const menuToggle = document.querySelector('.menu-toggle');
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  const lightBg = '{{- $bg_color -}}'.replace(/"/g, '');
+
+  setTimeout(() => {
+    htmlClass.remove('not-ready');
+  }, 10);
+
+  const setMenu = (isOpen) => {
+    htmlClass[isOpen ? 'add' : 'remove']('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  };
+
+  menuToggle.addEventListener('click', () => {
+    setMenu(!htmlClass.contains('open'));
+  });
+
+  document.querySelectorAll('.site-nav-panel a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+
+  const setDark = (isDark) => {
+    metaTheme.setAttribute('content', isDark ? '#111315' : lightBg);
+    htmlClass[isDark ? 'add' : 'remove']('dark');
+    localStorage.setItem('dark', isDark);
+  };
+
+  const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const darkVal = localStorage.getItem('dark');
+  setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+  darkScheme.addEventListener('change', (event) => {
+    setDark(event.matches);
+  });
+
+  document.querySelector('.theme-toggle').addEventListener('click', () => {
+    setDark(localStorage.getItem('dark') !== 'true');
+  });
+</script>

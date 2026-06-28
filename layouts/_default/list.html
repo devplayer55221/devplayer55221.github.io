@@ -1,0 +1,50 @@
+{{- define "main" -}}
+
+{{- if and .Title (eq .Type "tags") -}}
+<header class="page-heading">
+  <p class="kicker">Tag</p>
+  <h1>#{{- .Title -}}</h1>
+</header>
+{{- else if .IsHome -}}
+<header class="home-heading">
+  <h1>Blog</h1>
+</header>
+{{- else if .Title -}}
+<header class="page-heading">
+  <h1>{{- .Title -}}</h1>
+</header>
+{{- end -}}
+
+{{- $pages := union .RegularPages .Sections -}}<!---->
+{{- if .IsHome -}}<!---->
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}<!---->
+{{- end -}}
+
+{{- $paginator := .Paginate $pages -}}
+
+<div class="post-list">
+  {{- range $index, $page := $paginator.Pages -}}<!---->
+  <article class="post-row">
+    <div class="post-row-meta">
+      {{- if gt .Weight 0 -}}
+      <span class="featured-label">Featured</span>
+      {{- end -}}
+      <time>{{- .Date | time.Format ":date_medium" -}}</time>
+    </div>
+    <h2><a href="{{- .Permalink -}}">{{- .Title -}}</a></h2>
+  </article>
+  {{- end -}}
+</div>
+
+{{- if gt $paginator.TotalPages 1 -}}
+<nav class="pager" aria-label="Pagination">
+  {{- if $paginator.HasPrev -}}
+  <a class="btn" href="{{- $paginator.Prev.URL -}}">← {{- i18n "prev_page" -}}</a>
+  {{- end -}}<!---->
+  {{- if $paginator.HasNext -}}
+  <a class="btn" href="{{- $paginator.Next.URL -}}">{{- i18n "next_page" -}} →</a>
+  {{- end -}}
+</nav>
+{{- end -}}<!---->
+
+{{- end -}}

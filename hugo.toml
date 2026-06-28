@@ -6,8 +6,10 @@ theme = 'hugo-paper'
 
 
 [params]
+  mainSections = ['post']
+
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'portfolio'                       # portfolio, linen, wheat, gray, light
 
   # header social icons
   twitter = 'devplayer55221'               # twitter.com/YOUR_TWITTER_ID
@@ -25,15 +27,18 @@ theme = 'hugo-paper'
   # monoDarkIcon = false                       # show monochrome dark mode icon
   # math = true                               # enable KaTeX math typesetting globally
   # localKatex = false                        # use local KaTeX js/css instead of CDN
-  # favicon = "favicon.ico"                   # customize the default favicon
-  # appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 [menu]
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/"
+    weight = 5
 
   [[menu.main]]
     identifier = "about"

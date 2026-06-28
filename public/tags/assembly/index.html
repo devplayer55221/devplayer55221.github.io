@@ -1,0 +1,152 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#f6f1e8"
+  lang="en-us"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45849&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>Assembly - devplayer55221</title>
+
+  <meta name="theme-color" />
+  <link rel="icon" href="data:," /><meta
+    name="description"
+    content="A personal blog"
+  />
+  <meta name="author" content="devplayer55221" /><link rel="preload stylesheet" as="style" href="http://localhost:45849/custom.min.css" /><link rel="preload" as="image" href="http://localhost:45849/twitter.svg" /><link rel="preload" as="image" href="http://localhost:45849/github.svg" /><link rel="preload" as="image" href="http://localhost:45849/linkedin.svg" /><meta name="generator" content="Hugo 0.123.7"></head>
+<body class="site-shell"><header class="site-header">
+  <a class="site-brand" href="http://localhost:45849/" aria-label="devplayer55221 home">
+    <span>devplayer55221</span>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="site-nav-panel"><nav class="site-nav" aria-label="Main navigation"><a href="/">Blog</a><a href="/about/">About</a></nav><nav class="social-nav" aria-label="Social links">
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/twitter.svg)"
+        href="https://twitter.com/devplayer55221"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/github.svg)"
+        href="https://github.com/devplayer55221"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/linkedin.svg)"
+        href="https://linkedin.com/in/mukund-kr-kedia"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+      <span class="theme-toggle-track"><span class="theme-toggle-dot"></span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const htmlClass = document.documentElement.classList;
+  const menuToggle = document.querySelector('.menu-toggle');
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  const lightBg = '#f6f1e8'.replace(/"/g, '');
+
+  setTimeout(() => {
+    htmlClass.remove('not-ready');
+  }, 10);
+
+  const setMenu = (isOpen) => {
+    htmlClass[isOpen ? 'add' : 'remove']('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  };
+
+  menuToggle.addEventListener('click', () => {
+    setMenu(!htmlClass.contains('open'));
+  });
+
+  document.querySelectorAll('.site-nav-panel a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+
+  const setDark = (isDark) => {
+    metaTheme.setAttribute('content', isDark ? '#111315' : lightBg);
+    htmlClass[isDark ? 'add' : 'remove']('dark');
+    localStorage.setItem('dark', isDark);
+  };
+
+  const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const darkVal = localStorage.getItem('dark');
+  setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+  darkScheme.addEventListener('change', (event) => {
+    setDark(event.matches);
+  });
+
+  document.querySelector('.theme-toggle').addEventListener('click', () => {
+    setDark(localStorage.getItem('dark') !== 'true');
+  });
+</script>
+<main class="site-main"><header class="page-heading">
+  <p class="kicker">Tag</p>
+  <h1>#Assembly</h1>
+</header><div class="post-list">
+  <article class="post-row">
+    <div class="post-row-meta"><time>May 11, 2025</time>
+    </div>
+    <h2><a href="http://localhost:45849/post/binary-bomb-phase-6-walkthrough/">Binary Bomb Phase 6 Walkthrough</a></h2>
+  </article>
+  <article class="post-row">
+    <div class="post-row-meta"><time>Mar 14, 2024</time>
+    </div>
+    <h2><a href="http://localhost:45849/post/learning-re/">Learning to Reverse Engineer with GDB</a></h2>
+  </article></div></main><footer class="site-footer">
+  <div>&copy;2026
+    <a href="http://localhost:45849/">devplayer55221</a></div>
+  <div class="site-footer-links">
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>
+    <span>Local time <time id="local-clock" datetime=""></time></span>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const clock = document.getElementById('local-clock');
+    if (!clock) return;
+
+    const updateClock = () => {
+      const now = new Date();
+      clock.dateTime = now.toISOString();
+      clock.textContent = now.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    };
+
+    updateClock();
+    setInterval(updateClock, 30000);
+  })();
+</script>
+</body>
+</html>

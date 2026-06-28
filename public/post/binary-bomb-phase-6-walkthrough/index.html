@@ -1,0 +1,453 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#f6f1e8"
+  lang="en-us"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=45849&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>Binary Bomb Phase 6 Walkthrough - devplayer55221</title>
+
+  <meta name="theme-color" />
+  <link rel="icon" href="data:," /><meta name="description" content="I completed the course &lsquo;Architecture 1001: x86-64 Assembly&rsquo; from Open Security Training 2, and there was a very nice challenge in this course - Binary Bomb.
+You can find the challenge binary here - https://gitlab.com/opensecuritytraining/arch1001_x86-64_asm_code_for_class/-/tree/master/binary_bomb_lab/windows?ref_type=heads
+I will be walking through the last phase - 6 of the Binary Bomb challenge using WinDbg.
+Open the executable with the solutions file path in the argument. The solutions file would be containing the solutions to previous 5 phases in separate lines." />
+  <meta name="author" content="mukund" /><link rel="preload stylesheet" as="style" href="http://localhost:45849/custom.min.css" /><link rel="preload" as="image" href="http://localhost:45849/twitter.svg" /><link rel="preload" as="image" href="http://localhost:45849/github.svg" /><link rel="preload" as="image" href="http://localhost:45849/linkedin.svg" /><script
+    defer
+    src="http://localhost:45849/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script><meta name="generator" content="Hugo 0.123.7"></head>
+<body class="site-shell"><header class="site-header">
+  <a class="site-brand" href="http://localhost:45849/" aria-label="devplayer55221 home">
+    <span>devplayer55221</span>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="site-nav-panel"><nav class="site-nav" aria-label="Main navigation"><a href="/">Blog</a><a href="/about/">About</a></nav><nav class="social-nav" aria-label="Social links">
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/twitter.svg)"
+        href="https://twitter.com/devplayer55221"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/github.svg)"
+        href="https://github.com/devplayer55221"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="social-link"
+        style="--url: url(http://localhost:45849/linkedin.svg)"
+        href="https://linkedin.com/in/mukund-kr-kedia"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark theme">
+      <span class="theme-toggle-track"><span class="theme-toggle-dot"></span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const htmlClass = document.documentElement.classList;
+  const menuToggle = document.querySelector('.menu-toggle');
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  const lightBg = '#f6f1e8'.replace(/"/g, '');
+
+  setTimeout(() => {
+    htmlClass.remove('not-ready');
+  }, 10);
+
+  const setMenu = (isOpen) => {
+    htmlClass[isOpen ? 'add' : 'remove']('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  };
+
+  menuToggle.addEventListener('click', () => {
+    setMenu(!htmlClass.contains('open'));
+  });
+
+  document.querySelectorAll('.site-nav-panel a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+
+  const setDark = (isDark) => {
+    metaTheme.setAttribute('content', isDark ? '#111315' : lightBg);
+    htmlClass[isDark ? 'add' : 'remove']('dark');
+    localStorage.setItem('dark', isDark);
+  };
+
+  const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const darkVal = localStorage.getItem('dark');
+  setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+  darkScheme.addEventListener('change', (event) => {
+    setDark(event.matches);
+  });
+
+  document.querySelector('.theme-toggle').addEventListener('click', () => {
+    setDark(localStorage.getItem('dark') !== 'true');
+  });
+</script>
+<main class="site-main"><article class="content-article">
+  <header class="article-header">
+    <h1>Binary Bomb Phase 6 Walkthrough</h1><div class="article-meta"><time>May 11, 2025</time><span aria-hidden="true">/</span>
+      <span>mukund</span></div></header>
+
+  <section class="article-body"><p>I completed the course &lsquo;<a href="https://apps.p.ost2.fyi/learning/course/course-v1:OpenSecurityTraining2+Arch1001_x86-64_Asm+2021_v1/home">Architecture 1001: x86-64 Assembly</a>&rsquo; from <strong>Open Security Training 2</strong>, and there was a very nice challenge in this course - <code>Binary Bomb</code>.</p>
+<p>You can find the challenge binary here - <a href="https://gitlab.com/opensecuritytraining/arch1001_x86-64_asm_code_for_class/-/tree/master/binary_bomb_lab/windows?ref_type=heads">https://gitlab.com/opensecuritytraining/arch1001_x86-64_asm_code_for_class/-/tree/master/binary_bomb_lab/windows?ref_type=heads</a></p>
+<p>I will be walking through the last phase - 6 of the Binary Bomb challenge using WinDbg.</p>
+<p>Open the executable with the solutions file path in the argument. The solutions file would be containing the solutions to previous 5 phases in separate lines.</p>
+<p>Reload the symbols -&gt; <code>.reload /f</code></p>
+<p>Disassemble the phase_6 function -&gt; <code>uf phase_6</code></p>
+<p>Below is the C code written after analysing the assembly instructions:</p>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct Node {
+    int value;
+    int index;
+    struct Node *next;
+}; 
+
+struct Node* createNode(int val, int index) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode-&gt;value = val;
+    newNode-&gt;next = NULL;
+    return newNode;
+}
+
+
+int phase6(int inp[])
+{
+    struct Node* ll1 = createNode(0x212,1);
+    struct Node* ll2 = createNode(0x1c2,2);
+    struct Node* ll3 = createNode(0x215,3);
+    struct Node* ll4 = createNode(0x393,4);
+    struct Node* ll5 = createNode(0x3a7,5);
+    struct Node* ll6 = createNode(0x200,6);
+
+    ll1-&gt;next = ll2;
+    ll2-&gt;next = ll3;
+    ll3-&gt;next = ll4;
+    ll4-&gt;next = ll5;
+    ll5-&gt;next = ll6;
+
+    struct Node* head = ll1;
+
+    //first part
+    int a = 0;
+    while(a &lt; 6)
+    {
+        if(inp[a] &gt;=1 &amp;&amp; inp[a]&lt;=6)
+        {
+            int b = a + 1;
+            while(b &lt; 6) 
+            {
+                if(inp[a] != inp[b])
+                {
+                    b++;
+                }
+                else {
+                    return 0;
+                }
+            }
+            a++;
+        }
+        else {
+            return 0;
+        }
+    }
+    printf(&#34;first part done!\n&#34;);
+
+    //second part
+    a = 0;
+    struct Node* narr[6] = {0};
+    struct Node* curr = NULL;
+    while(a &lt; 6) 
+    {
+        curr = head;
+        int b = 1;    
+        while(b &lt; inp[a])
+        {
+            curr = curr-&gt;next;
+            b++;
+        }
+        narr[a] = curr;
+        a++;
+    }
+
+    head = narr[0];
+    curr = head;
+
+    //third part
+    a = 1;
+    while(a &lt; 6)
+    {
+        curr-&gt;next = narr[a];
+        curr = curr-&gt;next;
+        a++;
+    }
+    
+    //fourth part
+    curr-&gt;next = NULL;
+    curr = head;
+    a = 0;
+    while(a &lt; 5)
+    {
+        if(curr-&gt;value &lt; curr-&gt;next-&gt;value)
+        {
+            return(0);
+        }
+        else
+        {
+            curr = curr-&gt;next;
+            a++;
+        }
+    }
+    return 1;
+}
+
+int main()
+{
+    int inp[] = {5,4,3,1,6,2};
+    int out = phase6(inp);
+    if(out == 0)
+    {
+        printf(&#34;Game over, bomb exploded\n&#34;);
+    }
+    else
+    { 
+        printf(&#34;Game completed\n&#34;);
+    }
+}
+</code></pre><p>Let&rsquo;s go through the assembly step-by-step and map it to the C code:</p>
+<ul>
+<li>We see a call to the function &lsquo;read_six_numbers&rsquo;. Add a breakpoint on the call instruction if you want to explore the function.</li>
+<li>The function <code>read_six_numbers</code> will take <code>rcx</code>, <code>rdx</code> as arguments. <code>rdx</code> is set with the address of <code>rbp+48h</code>. The user input values will be set from the address starting at <code>rdx</code>, and hence <code>rbp+48h</code> will have the input values.</li>
+</ul>
+<p><img src="/images/sscanf%20numbers.png" alt="read_six_numbers">
+<img src="/images/sscanf%20breakpoint.png" alt="breakpoint on read_six_numbers"></p>
+<ul>
+<li>Add breakpoint to check the output of read six numbers. It can be seen that even if the input contains more than 6 digits, the output is 6, so it could mean that first 6 digits would be considered.</li>
+</ul>
+<p><img src="/images/read%20six%20numbers.png" alt="read_six_numbers input">
+<img src="/images/read%20six%20numbers%20output.png" alt="output of read_six_numbers"></p>
+<ul>
+<li>
+<p>After the call to read_six_numbers, a variable <code>rbp+0c4h</code> (let&rsquo;s call this as variable <code>a</code>) is set to 0 and there is jump statement.</p>
+</li>
+<li>
+<p>The jump statement takes the control to the compare function. This function checks if the value of the variable is greater than or equal to 6.</p>
+</li>
+</ul>
+<p><img src="/images/jump1.png" alt="compare length of user input"></p>
+<ul>
+<li>If the value is greater than equal to 6, the jump statement is executed and takes the control to a different location which is outside the loop. This seems like the false condition for a loop.</li>
+</ul>
+<p><img src="/images/a%20loop%20wrong%20condition%20jump%20loc.png" alt="jump for wrong loop condition"></p>
+<ul>
+<li>But, if the value of <code>a</code> is less than 6, the jump does not take place and flow continues after the jump statement.</li>
+</ul>
+<p><img src="/images/first%20loop%20condition.png" alt="first loop"></p>
+<ul>
+<li><code>rbp+48h</code> had the user input values. The value of variable <code>a</code> is being used as an array index (let&rsquo;s call the array as <code>inp</code>).
+The value of array at index <em>a</em> <code>inp[a]</code> is compared with 1.
+If the value turns out to be less than 1, the explode_bomb is function being called with jump statement.</li>
+</ul>
+<p><img src="/images/func%201%20condition%201.png" alt="first loop condition 1"></p>
+<ul>
+<li>If the value of <code>inp[a]</code> is more than 1, then again the <code>inp[a]</code> is being compared with 6. If the value is greater than 6, the jump statement is not executed and explode_bomb function will be called.
+<strong>So, the value of <code>inp[a]</code> should be in range of 1 and 6.</strong></li>
+</ul>
+<p><img src="/images/func%201%20condition%202.png" alt="first loop condition 2"></p>
+<ul>
+<li>If the value of <code>inp[a]</code> is less than or equal to 6, then a new variable <code>rbp+0e4h</code> (let&rsquo;s call it variable <code>b</code>) is assigned the value <code>a+1</code>.</li>
+</ul>
+<p><img src="/images/b%20assignment.png" alt="b assignment"></p>
+<ul>
+<li>The jump statement takes the control to a condition statement, where the value of <code>b</code> is compared with 6.</li>
+</ul>
+<p><img src="/images/b%20condition.png" alt="b condition"></p>
+<ul>
+<li>If the value is greater than or equal to 6, the jump statment again takes control to the increment operation of variable <code>a</code>.</li>
+</ul>
+<p><img src="/images/func%201%20nested%20loop%20end.png" alt="nested loop end"></p>
+<ul>
+<li>If the value of <code>b</code> is less than 6, then there is a comparison between <code>inp[a]</code> and <code>inp[b]</code>.</li>
+</ul>
+<p><img src="/images/func%201%20array%20values%20cmp.png" alt="array values comparison"></p>
+<ul>
+<li>If the values are equal, the jump statement is not taken, and explode_bomb function is called. If the values are not equal, the jump statement takes the control to increment of variable <code>b</code> and back to the loop condition of comparison of value <code>b</code> with 6.</li>
+</ul>
+<p><img src="/images/func1%20array%20values%20not%20equal.png" alt="array values not equal jump">
+<img src="/images/func%201%20array%20values%20not%20equal%20jump.png" alt="b value increment"></p>
+<ul>
+<li>Now, if we go back and look around the read_six_numbers function, there is an instruction related to node. Address of this node is saved to <code>rbp+8</code>.</li>
+</ul>
+<p><img src="/images/node%20instruction.png" alt="node instruction"></p>
+<ul>
+<li>If we try to print the value at address, we could see that it contains a different address as well. We can print that too, and find a pattern.</li>
+</ul>
+<p><img src="/images/node%20address1.png" alt="node address1">
+<img src="/images/node%20address2.png" alt="node address1">
+<img src="/images/node%20address3.png" alt="node address1"></p>
+<ul>
+<li>
+<p>This shows a Linked List structure where each node has a value and reference the next node address. The last node with the address <em>b108f000</em> seems to be the last node, as it doesn&rsquo;t point to another address.</p>
+</li>
+<li>
+<p>When the condition of main loop became false, the just statement took the control to outside the loop where the value of <code>a</code> is set to 0 and then jump statement takes to another condition where <code>a</code> is compared with 6. This seems to be the start of another main loop.</p>
+</li>
+</ul>
+<p><img src="/images/a%20ge%206%20condition%202.png" alt="a compared against 6 again"></p>
+<ul>
+<li>
+<p>If the value of <code>a</code> again is greater than or equal to 6, the control passes to a different location.</p>
+</li>
+<li>
+<p>If the value of <code>a</code> is less than 6, <code>rbp+8</code> which contains the address of first linked list node, is passed to <code>rbp+28h</code>. The value of <code>b</code> is set to 1.
+Let&rsquo;s call the node at <code>rbp+8</code> as <code>head</code>, and <code>rbp+28h</code> as <code>curr</code> (current).</p>
+</li>
+</ul>
+<p><img src="/images/second%20loop%20inside.png" alt="second loop"></p>
+<ul>
+<li>The value of <code>b</code> is compared with the value of array at index <code>a</code>. If value of <code>b</code> is less, the value of <code>curr</code> is set to <code>curr-&gt;next</code> (the next node). For each node, the value at the address is the node value, then there is index, and then the address to next node. So, the <node address> + 8, gives the address of next node.</li>
+</ul>
+<p><img src="/images/second%20loop%20condition%201.png" alt="second loop first condition">
+<img src="/images/second%20loop%20node%20iteration.png" alt="second loop node iteration"></p>
+<ul>
+<li>The value of <code>b</code> is increased by 1 and agin the comparison starts, so it means the comparison of <code>b</code> with value of array at index <code>a</code> was a loop condition (nested loop) and here the loop ends.</li>
+</ul>
+<p><img src="/images/second%20loop%20b%20increment.png" alt="second loop b increment"></p>
+<ul>
+<li>If the value of <code>b</code> when compared with value of array at <code>a</code> was greater, then the jump would pass the control outside the inner loop. <code>rbp+78h</code> contained the address of the start of the node of linked list. From this address, an array is taken (let&rsquo;s call it <code>narr</code>), whose value at index <em>a</em> <code>narr[a]</code> is set with the value of <code>curr</code> node.</li>
+</ul>
+<p><img src="/images/second%20loop%20outside%20inner%20loop.png" alt="second loop outside inner loop"></p>
+<ul>
+<li>Jump instruction takes the control to iteration where the value of <code>a</code> is incremented by 1, and again the condition is checked, which means the loop ends.</li>
+</ul>
+<p><img src="/images/second%20loop%20iteration.png" alt="second loop iteration"></p>
+<ul>
+<li>If the value of <code>a</code> becomes greater than or equal to 6, then the loop condition breaks and control passes outside the loop.
+The address at <code>rbp+78h</code> (<code>narr[0]</code> node array) is being set to <code>rbp+8</code> (<code>head</code> node). The address from <code>rbp+8</code> (<code>head</code>) is being set to <code>rbp+28h</code> (<code>curr</code> node).</li>
+</ul>
+<p><img src="/images/second%20loop%201.png" alt="second loop linked list address 1"></p>
+<ul>
+<li>We can check the value of <code>rbp+78</code> (<code>narr</code>) has address of different nodes of the linked list.</li>
+</ul>
+<p><img src="/images/second%20loop%20nodes%20address.png" alt="second loop linked list address 1"></p>
+<ul>
+<li>We can break at the line where <code>rbp+28h</code> (<code>curr</code>)is assigned and check the value. It has the starting node address of linked list.</li>
+</ul>
+<p><img src="/images/rbp%2028h%20starting%20address.png" alt="rbp 28h starting address"></p>
+<ul>
+<li>
+<p>So, this indicates something like <code>head = narr[0]; curr = head;</code></p>
+</li>
+<li>
+<p>The value of <code>a</code> is set to 1, and jump takes the control to a comparison statement which again compares the value of <code>a</code> with 6. This could be the start of another loop.</p>
+</li>
+</ul>
+<p><img src="/images/third%20loop%20start.png" alt="third loop start"></p>
+<ul>
+<li>
+<p>If the value of <code>a</code> is greater than or equal to 6, the jump statement takes the control to a different location.</p>
+</li>
+<li>
+<p>If the value of <code>a</code> is less, the loop starts/continues.
+The <code>curr</code> node (<code>rbp+28h</code>) next element is set to the node at index <code>a</code> of the node array <code>narr</code> (<code>curr-&gt;next = narr[a]</code>). Then <code>curr</code> node is again set to <code>curr-&gt;next</code>.</p>
+</li>
+</ul>
+<p><img src="/images/third%20loop%20inside.png" alt="third loop inside"></p>
+<ul>
+<li>The jump instruction takes the control to iteration where the value of <code>a</code> is increased by 1. After the iteration again there is the comparison statement of <code>a</code> which is the loop condition, so the loop ends.</li>
+</ul>
+<p><img src="/images/third%20loop%20iteration.png" alt="third loop iteration"></p>
+<ul>
+<li>If the value of <code>a</code> becomes more than or equal to 6, the loop breaks and control moves out of loop.
+The <code>curr</code> node next address is set to 0, which indicates to NULL. It means that the <code>curr</code> node does not point to any other node.</li>
+<li>Then the <code>curr</code> node is pointed to the <code>head</code> node. Value of <code>a</code> is set to 0.</li>
+</ul>
+<p><img src="/images/after%20third%20loop.png" alt="after third loop"></p>
+<ul>
+<li>The jump statement then takes the control to the comparison instruction. If the value of <code>a</code> is greater than or equal to 5, jump statement takes the control to another location.</li>
+</ul>
+<p><img src="/images/fourth%20loop%20condition.png" alt="fourth loop condition"></p>
+<ul>
+<li>If the value of <code>a</code> is less than 5, comparison happens between values of <code>curr</code> and <code>curr-&gt;next</code>. If <code>curr</code> value is less than <code>curr-&gt;next</code> value, the <code>explode_bomb</code> function is being called.</li>
+</ul>
+<p><img src="/images/fourth%20loop%20condition%20true.png" alt="fourth loop true condition"></p>
+<ul>
+<li>If the value of <code>curr</code> is equal to or greater than value of <code>curr-&gt;next</code>, then <code>curr</code> node is set to <code>curr-&gt;next</code> node.</li>
+</ul>
+<p><img src="/images/curr%20curr%20next%20condition.png" alt="curr curr next condition"></p>
+<ul>
+<li>The jump statement takes the control to iteration where the value of <code>a</code> is increased by 1. The loop condition comes again, which means that the loop ends.</li>
+</ul>
+<p><img src="/images/fourth%20loop%20iteration.png" alt="fourth loop iteration"></p>
+<ul>
+<li>If the value of <code>a</code> is greater than or equal to 5, the control passes outside the loop.</li>
+</ul>
+<p><img src="/images/after%20fourth%20loop.png" alt="after fourth loop"></p>
+<p>The program ends here.</p>
+<p>To create the C program, we need to create the nodes of the linked list. We can take the values of nodes as shown in the assembly code by printing the values at <strong>00007ff6`b108f000</strong>.</p>
+<ul>
+<li>The first loop is trying to check if the user input values are also distinct.</li>
+<li>The second loop is trying to put different nodes at different array index based on an algorithm. Our input is used to set the order of nodes in the array.</li>
+<li>The third loop is trying to make links between different nodes of the array to form the linked list.</li>
+<li>The fourth loop is trying to check if the nodes of linked list are linked in the descending order of their values.</li>
+</ul>
+<p>So, we should input the numbers such that the nodes at those indices (our inputs) be in descending order of their value.</p>
+</section><footer class="tag-list" aria-label="Post tags"><a href="http://localhost:45849/tags/assembly">assembly</a><a href="http://localhost:45849/tags/reverse-engineering">reverse engineering</a></footer><nav class="post-nav" aria-label="Post navigation"><a href="http://localhost:45849/post/learning-c&#43;&#43;/"><span>Learning C&#43;&#43;</span><span>→</span></a></nav></article></main><footer class="site-footer">
+  <div>&copy;2026
+    <a href="http://localhost:45849/">devplayer55221</a></div>
+  <div class="site-footer-links">
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>
+    <span>Local time <time id="local-clock" datetime=""></time></span>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const clock = document.getElementById('local-clock');
+    if (!clock) return;
+
+    const updateClock = () => {
+      const now = new Date();
+      clock.dateTime = now.toISOString();
+      clock.textContent = now.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    };
+
+    updateClock();
+    setInterval(updateClock, 30000);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div>
+    {{- if site.Copyright -}} {{- site.Copyright -}} {{- else -}} &copy; {{-
+    now.Year }}
+    <a href="{{- `` | absURL -}}">{{- site.Title -}}</a>
+    {{- end -}}
+  </div>
+  <div class="site-footer-links">
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>
+    <span>Local time <time id="local-clock" datetime=""></time></span>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const clock = document.getElementById('local-clock');
+    if (!clock) return;
+
+    const updateClock = () => {
+      const now = new Date();
+      clock.dateTime = now.toISOString();
+      clock.textContent = now.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    };
+
+    updateClock();
+    setInterval(updateClock, 30000);
+  })();
+</script>
