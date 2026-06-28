@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assembly on devplayer55221</title>
-    <link>http://localhost:45849/tags/assembly/</link>
+    <link>http://localhost:42801/tags/assembly/</link>
     <description>Recent content in Assembly on devplayer55221</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45849/tags/assembly/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:42801/tags/assembly/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Bomb Phase 6 Walkthrough</title>
-      <link>http://localhost:45849/post/binary-bomb-phase-6-walkthrough/</link>
+      <link>http://localhost:42801/post/binary-bomb-phase-6-walkthrough/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45849/post/binary-bomb-phase-6-walkthrough/</guid>
+      <guid>http://localhost:42801/post/binary-bomb-phase-6-walkthrough/</guid>
       <description>I completed the course &amp;lsquo;Architecture 1001: x86-64 Assembly&amp;rsquo; from Open Security Training 2, and there was a very nice challenge in this course - Binary Bomb.&#xA;You can find the challenge binary here - https://gitlab.com/opensecuritytraining/arch1001_x86-64_asm_code_for_class/-/tree/master/binary_bomb_lab/windows?ref_type=heads&#xA;I will be walking through the last phase - 6 of the Binary Bomb challenge using WinDbg.&#xA;Open the executable with the solutions file path in the argument. The solutions file would be containing the solutions to previous 5 phases in separate lines.</description>
     </item>
     <item>
       <title>Learning to Reverse Engineer with GDB</title>
-      <link>http://localhost:45849/post/learning-re/</link>
+      <link>http://localhost:42801/post/learning-re/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:45849/post/learning-re/</guid>
+      <guid>http://localhost:42801/post/learning-re/</guid>
       <description>Wrote a post on learning to use GDB for revese engineering a very simple C program. It can also give an understanding of few Assembly Language basics.&#xA;https://payatu.com/blog/learning-to-reverse-engineer-with-gdb/</description>
     </item>
   </channel>
