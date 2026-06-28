@@ -28,23 +28,16 @@ assets/custom.css
 
 These files replace or customize the matching templates from `hugo-paper`.
 
-## What Was Changed
+## Changes
 
 - Replaced the default `hugo-paper` visual style with a custom minimal portfolio theme.
 - Added a custom header, navigation layout, footer, homepage post list, and article page layout.
 - Kept the homepage behavior of listing blog posts.
-- Changed the homepage heading to only show `Blog Posts`.
 - Removed the default browser favicon by using a blank data favicon.
 - Removed the custom brand mark before the site title.
 - Added a small live local-time footer detail.
 - Loaded only `assets/custom.css` for the custom theme styles.
 - Preserved dark-mode behavior, social links, pagination, tags, post navigation, Mermaid support, and optional comments integrations.
-
-## What Was Not Changed
-
-- Blog post Markdown content was not edited.
-- About page content was not edited.
-- The Markdown workflow is unchanged.
 - The upstream `themes/hugo-paper/` files were not modified for the custom theme.
 
 ## Writing Posts
