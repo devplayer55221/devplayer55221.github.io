@@ -135,13 +135,14 @@ a {
   align-items: center;
   gap: 1.5rem;
 }
-
-.site-nav-panel::before{
-    content:"";
-    position:fixed;
-    inset:68px 0 0 0;
-    background:rgba(0,0,0,.35);
-    z-index:-1;
+@media (max-width:760px){
+  .site-nav-panel::before{
+      content:"";
+      position:fixed;
+      inset:68px 0 0 0;
+      background:rgba(0,0,0,.35);
+      z-index:-1;
+  }
 }
 
 .site-nav,
